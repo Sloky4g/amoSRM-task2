@@ -1,0 +1,12 @@
+.desktop_layout {
+  position: relative;
+  height: 100%;
+}
+
+.desktop_layout-bg_img {
+  position: absolute;
+  z-index: 0;
+  top: -550px;
+  left: 50%;
+  transform: translateX(-70%);
+}

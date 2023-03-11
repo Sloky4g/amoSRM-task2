@@ -1,0 +1,15 @@
+.mobile_main_menu {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile_main_menu a {
+  text-transform: uppercase;
+  font-family: InterMedium, sans-serif;
+  font-size: 12px;
+}
+
+.mobile_main_menu a:active {
+  text-decoration: underline;
+}

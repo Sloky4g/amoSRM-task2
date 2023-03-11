@@ -1,13 +1,108 @@
-body {
+/* Reset default styles */
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  border: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Main fonts */
+@font-face {
+  font-family: "InterRegular";
+  src: local("InterRegular"), url(../public/fonts/Inter-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "InterMedium";
+  src: local("InterMedium"), url(../public/fonts/Inter-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "InterBold";
+  src: local("InterBold"), url(../public/fonts/Inter-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "InterBlack";
+  src: local("InterBlack"), url(../public/fonts/Inter-Black.woff) format("woff");
+}
+
+@font-face {
+  font-family: "MontserratLight";
+  src: local("MontserratLight"), url(../public/fonts/Montserrat-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: local("MontserratRegular"), url(../public/fonts/Montserrat-Regular.woff) format("woff");
+}
+
+/* Main styles */
+body * {
+  font-family: MontserratRegular, sans-serif;
+  font-size: 16px;
+  color: #E4E5EA;
+}
+
+#root {
+  height: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+h1 {
+  font-family: InterRegular, sans-serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: InterMedium, sans-serif;
+  font-size: 18px;
+}
+
+h3 {
+  font-family: InterBold, sans-serif;
+  font-size: 14px;
+  color: #656566;
+}
+
+html, body {
+  background-color: #0E1014;
+  height: 100%;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.mobile_container {
+  margin: 0 auto;
+  padding: 0 15px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  flex: 1 1 auto;
 }

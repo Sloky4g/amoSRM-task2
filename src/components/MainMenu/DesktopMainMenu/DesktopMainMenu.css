@@ -1,0 +1,52 @@
+.main_menu {
+  margin-bottom: 94px;
+}
+
+.main_menu_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 57px 0 10px;
+}
+
+.main_menu-nav_container {
+  display: flex;
+  gap: 52px;
+}
+
+.main_menu-nav-logo_container {
+  cursor: pointer;
+}
+
+.main_menu-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.main_menu-nav a {
+  font-family: InterMedium, sans-serif;
+}
+
+.main_menu-nav a:hover {
+  text-decoration: underline;
+}
+
+.main_menu-contacts {
+  display: flex;
+  gap: 47px;
+}
+
+.main_menu-contacts a {
+  font-family: InterMedium, sans-serif;
+}
+
+.main_menu-contacts-social_media_container {
+  display: flex;
+  gap: 30px;
+}
+
+.main_menu-text {
+  font-family: MontserratLight, sans-serif;
+  font-size: 10px;
+  max-width: 139px;
+}
